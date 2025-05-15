@@ -20,6 +20,9 @@ if [ -f "/etc/nginx/sites-enabled/default" ]; then
 unlink /etc/nginx/sites-enabled/default
 fi
 
+
+rm -rf /etc/nginx/sites-available/default
+
 # Copiamos el archivo de configuración de Nginx
 cp /home/ubuntu/p2/conf/load-balancer.conf /etc/nginx/sites-available
 
