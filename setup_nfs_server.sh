@@ -22,7 +22,7 @@ mkdir -p /var/www/html
 sudo chown nobody:nogroup /var/www/html
 
 # Copiamos el archivo de configuracion de NFS
-cp /home/ubuntu/Presta2/nfs/exports /etc/exports
+cp /home/ubuntu/p2/nfs/exports /etc/exports
 
 # Reemplazamos el valor de la plantilla de /etc/exports
 sed -i "s#FRONTEND_NETWORK#$FRONTEND_NETWORK#" /etc/exports
