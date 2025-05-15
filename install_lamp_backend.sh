@@ -13,7 +13,7 @@ apt upgrade -y
 
 # Instalamos las dependencias necesarias
 sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:ondrej/php -y
+sudo add-apt-repository ppa:ondrej/nginx/php -y
 sudo apt update
 sudo apt install php7.4-fpm php7.4-cli php7.4-mysql php7.4-xml php7.4-curl php7.4-intl php7.4-zip php7.4-gd php7.4-mbstring php7.4-bcmath mysql-server -y
 
