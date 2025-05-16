@@ -19,6 +19,12 @@ sudo systemctl restart apache2
 # Copiamos el archivo de configuración de Apache
 cp /home/ubuntu/p2/conf/000-default.conf /etc/apache2/sites-available
 
+# Cambiamos los permisos de la carpeta
+sudo chown -R www-data:www-data /var/www/html/
+
+# Cambiamos los permisos de la carpeta
+sudo chmod -R 755 /var/www/html/
+
 # Activamos el sitio
 sudo a2ensite 000-default.conf
 sudo a2enconf forwarded
