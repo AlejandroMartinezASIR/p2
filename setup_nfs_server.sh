@@ -19,7 +19,7 @@ sudo apt install nfs-kernel-server -y
 mkdir -p /var/www/html
 
 #Cambiamos el propietario y el grupo del directorio /var/www/html
-sudo chown nobody:nogroup /var/www/html
+sudo chown www-data:www-data /var/www/html
 
 # Copiamos el archivo de configuracion de NFS
 cp /home/ubuntu/p2/nfs/exports /etc/exports
