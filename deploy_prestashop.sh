@@ -21,12 +21,6 @@ sudo rm -rf /var/www/html/*
 # Movemos los archivos a la carpeta de Apache
 sudo mv prestashop/* /var/www/html/
 
-# Cambiamos los permisos de la carpeta
-sudo chown -R www-data:www-data /var/www/html/
-
-# Cambiamos los permisos de la carpeta
-sudo chmod -R 755 /var/www/html/
-
 # Copiamos ela rchivo .htaccess
 sudo cp /home/ubuntu/p2/conf/.htaccess  /var/www/html/
 
