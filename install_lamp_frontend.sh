@@ -27,7 +27,6 @@ sudo chmod -R 755 /var/www/html/
 
 # Activamos el sitio
 sudo a2ensite 000-default.conf
-sudo a2enconf forwarded
 
 # 
 sudo sed -i 's/^memory_limit = .*/memory_limit = 512M/' "$PHP_INI"
